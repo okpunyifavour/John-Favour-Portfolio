@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start a Project | John Favour</title>
+    <meta name="description" content="Tell John Favour about your project. Reach out by email, phone or the form.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="solid">
+<a class="skip" href="#content">Skip to content</a>
+<header class="site-header">
+    <div class="wrap">
+        <a class="loc" href="index.html">Based in Jos, Nigeria</a>
+        <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+        <nav class="nav" id="nav" aria-label="Main">
+            <a href="index.html">Home</a>
+            <a href="main.html">Main</a>
+            <a href="start-a-project.html" aria-current="page">Start a Project</a>
+        </nav>
+    </div>
+</header>
+
+<main id="content">
+    <div class="wrap page-head">
+        <h1>Start a <span>project</span></h1>
+        <p>Tell me what you want to build, design or trade. I reply within a day.</p>
+    </div>
+
+    <div class="wrap contact">
+        <div>
+            <p class="tag">Contact</p>
+            <ul class="contact-list">
+                <li><small>Email</small><a href="mailto:dunkershighlight@gmail.com">dunkershighlight@gmail.com</a></li>
+                <li><small>Phone</small><a href="tel:+2349077275321">+234 907 727 5321</a></li>
+                <li><small>Location</small><span>Jos, Nigeria</span></li>
+            </ul>
+        </div>
+
+        <form id="project-form" novalidate>
+            <label>Your name
+                <input type="text" name="name" autocomplete="name" required>
+            </label>
+            <label>Your email
+                <input type="email" name="email" autocomplete="email" required>
+            </label>
+            <label>Service
+                <select name="service" required>
+                    <option value="">Choose a service</option>
+                    <option>Web Developer</option>
+                    <option>Graphics Design</option>
+                    <option>Backend Developer</option>
+                    <option>Forex and Crypto Trader</option>
+                </select>
+            </label>
+            <label>Project details
+                <textarea name="message" required></textarea>
+            </label>
+            <button class="btn" type="submit">Send message</button>
+            <p class="msg" role="status" aria-live="polite"></p>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <div class="wrap">
+        <span>&copy; <span data-year>2026</span> John Favour</span>
+        <span><a href="index.html">Back to home</a></span>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
